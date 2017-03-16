@@ -1,3 +1,18 @@
 <h1>
   {{title}}
 </h1>
+
+<hr>
+
+<span id="rojo">Mi nombre es <b>{{nombre}}</b></span>
+
+<hr>
+
+<button (click)="saludo()">Cambiar</button>
+
+<hr>
+
+<p>
+¿Cómo te llamas?
+<input type="text" [(ngModel)]="quien">
+</p>
