@@ -4,10 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { RaicerkLogoComponent } from './raicerk-logo/raicerk-logo.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RaicerkLogoComponent
   ],
   imports: [
     BrowserModule,
