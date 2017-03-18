@@ -5,11 +5,13 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { RaicerkLogoComponent } from './raicerk-logo/raicerk-logo.component';
+import { ApiRestComponent } from './api-rest/api-rest.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RaicerkLogoComponent
+    RaicerkLogoComponent,
+    ApiRestComponent
   ],
   imports: [
     BrowserModule,
