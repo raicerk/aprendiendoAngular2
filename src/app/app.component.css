@@ -1,4 +1,15 @@
-#rojo{
+.rojo{
     color: red;
     font-size: 50px;
+}
+
+article{
+    width: 90%;
+    border: 1px dotted #9c9c9c;
+    padding: 5px;
+    margin: 10px;
+}
+
+.azul{
+    color: blue;
 }

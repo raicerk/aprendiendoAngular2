@@ -2,17 +2,25 @@
   {{title}}
 </h1>
 
+<h2 [class]="miclasedecss">Mi titulo</h2>
+
+<article>
+
+    ¿Cómo te llamas?
+    <input type="text" [(ngModel)]="mitexto">
+    <button (click)="cambiar()">Cambiar</button>
+    <br>
+    <span class="rojo">Mi nombre es <b>{{nombre}}</b></span>
+
+</article>
+
 <hr>
 
-<span id="rojo">Mi nombre es <b>{{nombre}}</b></span>
+<article>
 
-<hr>
+    ¿Cómo te llamas?
+    <input type="text" [(ngModel)]="nombresillo">
+    <br>
+    <span class="rojo">Mi nombre es <b>{{nombresillo}}</b></span>
 
-<button (click)="saludo()">Cambiar</button>
-
-<hr>
-
-<p>
-¿Cómo te llamas?
-<input type="text" [(ngModel)]="quien">
-</p>
+</article>

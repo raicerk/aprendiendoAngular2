@@ -8,12 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   title = 'app works!';
-  nombre = 'Carolina';
-  quien = '';
+  nombre = '';
+  mitexto = '';
+  miclasedecss = 'azul';
 
-
-  saludo(){
-    this.nombre = this.quien;
-    console.log(this.nombre);
+  cambiar(){
+    this.nombre = this.mitexto;
   }
 }
