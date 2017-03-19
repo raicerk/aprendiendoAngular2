@@ -9,7 +9,7 @@ import 'rxjs/add/operator/map';
 })
 export class ApiRestComponent implements OnInit {
 
-  todo = '';
+  todo = [];
 
   constructor(private http: Http) { }
 
@@ -19,11 +19,11 @@ export class ApiRestComponent implements OnInit {
 
   getDatosPais(pais){
     this.http.get(`https://restcountries.eu/rest/v2/name/${pais}`)
-    .map(res => res.text())
-    //.map(res => res.json())
+    //.map(res => res.text())
+    .map(res => res.json())
     .subscribe(
       data => {
-        this.todo = data;
+        this.todo = data[0];
       },
       err => console.error(err),
       () => console.log('Api consumida')
